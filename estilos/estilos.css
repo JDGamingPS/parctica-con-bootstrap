@@ -1,0 +1,18 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.bg{
+    background-color: aqua;
+}
+
+.alto{
+    height: 500pt;
+    background-color: peru;
+
+}
