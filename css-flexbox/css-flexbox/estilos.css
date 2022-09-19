@@ -1,0 +1,84 @@
+.container{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+}
+
+.border {
+    border: 2px solid #000;
+}
+
+.h-700{
+    height: 700px;
+}
+
+.item{
+    background-color: peru;
+    text-align: center;
+    border: 2px #000 solid;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    /* width: 20px; */
+}
+
+.h-300{
+    height: 300px;
+}
+
+.flex-container{
+    display: flex; /* se posicionan uno al lado de otro flex */
+    /* flex-direction: row;  *//* se de izquierda a derecha */
+    flex-wrap: wrap; /* wrap hace que mientras se haga mas pequeño el contendor, los elementos se acomodan y pasan abajo sin perder su tamaño */
+    /* justify-content: center; *//* se alinean de forma horizontal */
+    align-items: flex-end; /* stretch, hace que los items tomen el 100% de alto swl contenedor padre, por defecto */
+    /* align-content: space-between;  *//* se alinea de forma vertical  */
+}
+
+/* con la siguiente proiedad no respeta la propiedad del padre y se posesionara en lo qu ele indiquemos */
+.align-self-start{
+    align-self: flex-start;
+}
+
+
+/* <--- se aplica a los child "niños" o tiems de los contenedores padre */
+/* aplica un ordern a los elementos , el numero mas bajo se posisiona al principio y despues los mas altosç */
+/* 
+.order-1{
+    order: 0;
+}
+
+.order-2{
+    order: 2;
+} */
+
+/* flex grow al tener elementos anidados intenta hacerse mas grande al tener un grow de numero mas alto */
+/* con grow definido trataran de coupar el espacio 100% disponible */
+.flex-grow-1{
+    flex-grow: 1;
+}
+
+.flex-grow-2{
+    flex-grow: 6;
+}
+
+.flex-shrink-0{
+    width: 300px; /* con la propiedad flex-shrink le ponemos un ancho minimo y tratara de mantenerlo cuando la pantalla se hace mas pequeña */
+    flex-shrink: 0;
+}
+
+/* ocupara el 50% de esapacio displonible de la pantalla */
+.flex-basis-i1{
+    flex-basis: 50%;
+}
+
+.flex-1{
+    flex: 1;
+}
+
+
+/* con esta proierdad 1(grow);: hace que se mantengan el tamaño, 0(shrink): temdram um ancho minimo , :(basis)300px ocupara el espacio de 300px disponibles en la pantalla */
+.flex-2{
+    flex: 1 0 300px;
+}
