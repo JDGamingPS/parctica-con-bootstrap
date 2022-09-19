@@ -1,0 +1,201 @@
+/* alto de 16px */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Utilitarias */
+.container{
+    width: 80%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5em;
+    margin: 0 0.1em;
+    border-radius: 0.5em;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #0F2620;
+}
+
+.btn-secondary {
+    color: white;
+    background-color: #7BA69A;
+}
+
+.btn-danger {
+    color: white;
+    background-color: #A6444C;
+}
+
+.btn-light {
+    color: black;
+    background-color: #DDF2CE;
+}
+
+.btn-dark {
+    color: white;
+    background-color: #302C2D;
+}
+
+/* Headee */
+.bg-header{
+    background-image: url('../imagenes/bg-header-min.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; /* lo que hace es adaptar la imgen al ancho de la pantalla */
+    height: 18.75em;
+}
+
+.bg-navbar{
+    background-color: rgba(0, 0, 0, 0.289);
+    padding: 1.5em;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /*  para trabajar con con colmunas verticales */
+}
+
+.navbar-brand{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 2rem; /* 16*2 = 32rem */
+    text-decoration: none;
+    font-weight: 500;
+    margin-bottom: 1em;
+}
+
+.navbar-brand img{
+    width: 2em; /* 32rem *2 = 64px */
+}
+
+.navbar-nav{
+    background-color: rgba(0, 0, 0, 0.923);
+    padding: 1em; /* 16 px del html como root */
+    border-radius: 0.3em;
+}
+
+.navbar-link{
+    display: inline-block;
+    padding: 00.3em;
+    text-decoration: white;
+    color: white;
+}
+
+.navbar-link:hover{
+    background-color: white;
+    color: black;
+    border-radius: 0.5em;
+}
+
+/* Main */
+.main{
+    background-color: white;
+    padding: 0.3em;
+    margin-top: -2em;
+    border-radius: 0.3em;
+}
+
+.main-title{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Card tarjetas */
+.card {
+    background-color: #A6444C;
+    color: white;
+    overflow: hidden;
+    border-radius: 0.5em;
+    margin-bottom: 1em;
+}
+
+.card-img {
+    width: 100%;
+}
+
+.card-body {
+    padding: 1em;
+}
+
+.card-body h5 {
+    font-size: 1.5rem;
+    margin: 1em 0;
+    font-weight: 400;
+}
+
+.card-body p {
+    font-weight: 200;
+}
+
+/* nosotros */
+.nosotros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1em;
+    background-color: #302C2D;
+}
+
+.nosotros-col-img{
+    background-image: url('../imagenes/nosotros-min.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 21.875em;
+    width: 100%;
+    order: 2;
+
+}
+
+.nosotros-col-text{
+    order: 1;
+}
+
+.nosotros-body{
+    padding: 1em;
+    text-align: center;
+    color: white;
+}
+
+.nosotros-body h2{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.nosotros-body p{
+    font-weight: 200;
+}
+
+/* Footer */
+
+.bg-footer{
+    background-color: #302C2D;
+    color: white;
+}
+
+.bg-footer p{
+    margin: 0;
+    padding: 1em 0;
+    text-align: center;
+}
